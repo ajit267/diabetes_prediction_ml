@@ -65,7 +65,7 @@ df_prediction_proba = pd.DataFrame(prediction_proba)
 df_prediction_proba.columns= ['You dont have diabetes','Oops! You have diabetes']
 df_prediction_proba.rename(columns={0:'You dont have diabetes',
                                    1:'Oops! You have diabetes'})
-#df_prediction_proba
+df_prediction_proba
 # Display Prediction
 st.subheader('Predicted Outcome')
 diabetes_outcome = np.array(['You dont have diabetes','Oops! You have diabetes'])
