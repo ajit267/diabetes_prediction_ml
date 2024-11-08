@@ -28,37 +28,28 @@ Pandas
 NumPy
 Scikit-learn
 You can install the required packages using pip:
-
 bash
-
-Verify
-
-Open In Editor
-Edit
-Copy code
 pip install streamlit pandas numpy scikit-learn
 
 ## Clone the Repository
 Clone the repository to your local machine using the following command:
-
 bash
 git clone https://github.com/ajit267/diabetes_prediction_ml.git
 Run the App
 
 #Navigate to the directory where the app is located and run the following command:
-
 bash
 streamlit run streamlit_app.py
 This will start a local server, and you can view the app in your web browser at http://localhost:8501.
 
 ## Features of the App
-# Data Input: Users can input their health metrics such as pregnancies, glucose level, blood pressure, skin thickness, insulin, BMI, diabetes pedigree function, and age using sliders.
+Data Input: Users can input their health metrics such as pregnancies, glucose level, blood pressure, skin thickness, insulin, BMI, diabetes pedigree function, and age using sliders.
 
-# Data Visualization: The app provides a scatter chart to visualize the relationship between BMI and Blood Pressure.
+Data Visualization: The app provides a scatter chart to visualize the relationship between BMI and Blood Pressure.
 
-# Model Training and Prediction: The app trains a Random Forest Classifier on the diabetes dataset and provides predictions based on user input.
+Model Training and Prediction: The app trains a Random Forest Classifier on the diabetes dataset and provides predictions based on user input.
 
-# Probability Display: The app shows the probability of the user having diabetes and displays the result dynamically.
+Probability Display: The app shows the probability of the user having diabetes and displays the result dynamically.
 
 # Further Reading
 To enhance your understanding of diabetes prediction and machine learning, consider exploring the following resources:
