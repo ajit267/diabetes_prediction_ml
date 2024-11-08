@@ -88,8 +88,10 @@ st.dataframe(df_prediction_proba,
     hide_index=True)
   
 
-diabetes_outcome = np.array(['You dont have diabetes','Oops! You have diabetes'])
-st.success(str(diabetes_outcome[0]))
+if prediction[0] == 0:
+    st.success('You don’t have diabetes')
+else:
+    st.error('Oops! You have diabetes')
 
 
 
