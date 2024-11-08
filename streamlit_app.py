@@ -59,8 +59,10 @@ rf.fit(x,y)
 # Apply model to make predictions
 prediction = rf.predict(input_df)
 prediction_proba = rf.predict_proba(input_df)
-prediction_proba
 
+df_prediction_proba = pd.DataFrame(prediction_proba)
+df_prediction_proba.column = ['N0','Yes']
+df_prediction_proba
 
 
 
