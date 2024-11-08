@@ -18,3 +18,10 @@ with st.expander('Data'):
 
 with st.expander('Data Visualization'):
   st.scatter_chart(data=df,x='BMI',y='BloodPressure',color='Outcome')
+
+# Data Preparation
+# Pregnancies,Glucose,BloodPressure,SkinThickness,Insulin,BMI,DiabetesPedigreeFunction,Age
+with st.sidebar:
+  st.header('Input Features')
+  Pregnancies = st.slider('No OF Pregnancies',0,10,5)
+
