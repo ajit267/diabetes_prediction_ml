@@ -20,7 +20,6 @@ with st.expander('Data Visualization'):
   st.scatter_chart(data=df,x='BMI',y='BloodPressure',color='Outcome')
 
 # Data Preparation
-# Pregnancies,Glucose,BloodPressure,SkinThickness,Insulin,BMI,DiabetesPedigreeFunction,Age
 with st.sidebar:
   st.header('Input Features')
   Pregnancies = st.slider('No OF Pregnancies',0,18,3)
@@ -31,5 +30,29 @@ with st.sidebar:
   BMI = st.slider('BMI',0,80,32)
   DiabetesPedigreeFunction = st.slider('DiabetesPedigreeFunction',0.00,2.45,0.47)
   Age = st.slider('Age',21,81,33)
+
+# Create a Data Frame for input Features
+data = {'Pregnancies':Pregnancies,
+        'Glucose':Glucose,
+        'BloodPressure':BloodPressure,
+        'SkinThickness':SkinThickness,
+        'Insulin':Insulin,
+        'BMI':BMI,
+        'DiabetesPedigreeFunction':DiabetesPedigreeFunction,
+        'Age':Age
+}
+input_df = pd.DataFrame(data, index=[0])
+input_df
+
+
+
+
+
+
+
+
+
+
+
   
 
