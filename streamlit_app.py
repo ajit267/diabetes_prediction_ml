@@ -15,3 +15,6 @@ with st.expander('Data'):
   st.write('**Y**')
   y = df.Outcome
   y
+
+with st.expander('Data Visualization'):
+  st.scatter_chart(data=df,x='BloodPressure',y='Age',color='Outcome')
