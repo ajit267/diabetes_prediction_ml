@@ -77,7 +77,6 @@ st.dataframe(df_prediction_proba,
             min_value=0,
             max_value=1,
         ),
-            column_config={
         "Oops! You have diabetes": st.column_config.ProgressColumn(
             "Oops! You have diabetes",
             width="medium",
