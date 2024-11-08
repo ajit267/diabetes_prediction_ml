@@ -70,21 +70,23 @@ df_prediction_proba
 st.subheader('Predicted Outcome')
 st.dataframe(df_prediction_proba,
              column_config={
-             'You dont have diabetes':st.column_config.ProgressColumn{
-              'You dont have diabetes',
-              format='$%f',
-              width='medium',
-              min_value=0,
-              max_value=1
-            },
-              'Oops! You have diabetes':st.column_config.ProgressColumn{
-              'Oops! You have diabetes',
-              format='$%f',
-              width='medium',
-              min_value=0,
-              max_value=1
-            },
-          }, hide_index=True)
+        "You dont have diabetes": st.column_config.ProgressColumn(
+            "You dont have diabetes",
+            width="medium",
+            format="%f",
+            min_value=0,
+            max_value=1,
+        ),
+            column_config={
+        "Oops! You have diabetes": st.column_config.ProgressColumn(
+            "Oops! You have diabetes",
+            width="medium",
+            format="%f",
+            min_value=0,
+            max_value=1,
+        ),
+    },
+    hide_index=True)
   
 
 diabetes_outcome = np.array(['You dont have diabetes','Oops! You have diabetes'])
