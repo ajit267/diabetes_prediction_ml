@@ -69,7 +69,7 @@ df_prediction_proba
 # Display Prediction
 st.subheader('Predicted Outcome')
 diabetes_outcome = np.array(['You dont have diabetes','Oops! You have diabetes'])
-st.success(str(diabetes_outcome[0]))
+st.success(str(diabetes_outcome[1]))
 
 
 
