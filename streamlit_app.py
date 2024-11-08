@@ -3,9 +3,9 @@ import pandas as pd
 import numpy as np
 from sklearn.ensemble import RandomForestClassifier
 
-st.title('🤖 Machine Learning App')
+st.title('🤖 Diabetes Prediction App')
 
-st.info("This app builds a machine learning model")
+st.info("This app builds a machine learning model to predict Diabetes")
 
 with st.expander('Data'):
   st.write('**Raw Data**')
