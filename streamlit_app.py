@@ -9,3 +9,9 @@ with st.expander('Data'):
   st.write('**Raw Data**')
   df = pd.read_csv("https://raw.githubusercontent.com/ajit267/Diabetes_Prediction/refs/heads/main/diabetes.csv")
   df
+  st.write('**X**')
+  x = df.drop('Outcome',axis=1)
+  x
+  st.write('**Y**')
+  y = df.Outcome
+  y
