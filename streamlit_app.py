@@ -72,14 +72,14 @@ st.dataframe(df_prediction_proba,
              column_config={
              'You dont have diabetes':st.column_config.ProgressColumn{
               'You dont have diabetes',
-              format='%f',
+              format='$%f',
               width='medium',
               min_value=0,
               max_value=1
             },
               'Oops! You have diabetes':st.column_config.ProgressColumn{
               'Oops! You have diabetes',
-              format='%f',
+              format='$%f',
               width='medium',
               min_value=0,
               max_value=1
