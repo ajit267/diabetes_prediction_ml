@@ -6,6 +6,6 @@ st.title('🤖 Machine Learning App')
 st.info("This app builds a machine learning model")
 
 with st.expander('Data'):
-  st.write('**Raw Data**'))
+  st.write('**Raw Data**')
   df = pd.read_csv("https://raw.githubusercontent.com/ajit267/Diabetes_Prediction/refs/heads/main/diabetes.csv")
   df
