@@ -17,4 +17,4 @@ with st.expander('Data'):
   y
 
 with st.expander('Data Visualization'):
-  st.scatter_chart(data=df,x='Age',y='BloodPressure',color='Outcome')
+  st.scatter_chart(data=df,x='BMI',y='BloodPressure',color='Outcome')
