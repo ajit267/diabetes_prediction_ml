@@ -44,7 +44,7 @@ data = {'Pregnancies':Pregnancies,
 input_df = pd.DataFrame(data, index=[0])
 input_outcome = pd.concat([input_df, x], axis=0)
 
-with st.expander('Input Features):
+with st.expander('Input Features'):
   st.write('**Input Features**')
   input_df
   st.write('**Combined Data**')
