@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+from sklearn.ensemble import RandomForestClassifier
 
 st.title('🤖 Machine Learning App')
 
@@ -50,8 +51,15 @@ with st.expander('Input Features'):
   st.write('**Combined Data**')
   input_outcome
 
+## Model Training and inference
+# Model Training
+rf = RandomForestClassifier()
+rf.fit(x,y)
 
-
+# Apply model to make predictions
+prediction = rf.predict(input_df)
+prediction_proba = rf.predict_proba(input_df)
+prediction_proba
 
 
 
