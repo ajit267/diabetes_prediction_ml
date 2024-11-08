@@ -61,7 +61,9 @@ prediction = rf.predict(input_df)
 prediction_proba = rf.predict_proba(input_df)
 
 df_prediction_proba = pd.DataFrame(prediction_proba)
-df_prediction_proba.column = ['N0','Yes']
+df_prediction_proba.columns= ['N0','Yes']
+df_prediction_proba.rename(columns={0:'No',
+                                   1:'Yes'})
 df_prediction_proba
 
 
